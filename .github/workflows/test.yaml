@@ -1,0 +1,10 @@
+name: test
+on: 
+  push:
+    branches: [main]
+jobs:
+  bulid:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v2
+      -run: python hello.py
